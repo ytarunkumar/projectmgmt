@@ -11,5 +11,13 @@
     "postal-codes-js": "^2.5.2",
     "restify": "^8.6.1",
     "restify-cors-middleware": "^1.1.1"
+  },
+  "scripts": {
+    "start": "node server.js", // Example: Start your Node.js application
+    "test": "jest", // Example: Run tests using Jest
+    "build": "npm run lint && npm run compile", // Example: Build your application
+    "lint": "eslint .", // Example: Lint your JavaScript code
+    "compile": "tsc", // Example: Compile TypeScript code (if applicable)
+    "deploy": "custom-deployment-command" // Example: Custom deployment script
   }
 }

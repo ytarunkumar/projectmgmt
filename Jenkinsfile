@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Install Node.js and dependencies
-                sh 'npm install'
+                sh 'npm install --force'  // Or 'npm install --legacy-peer-deps'
             }
         }
 

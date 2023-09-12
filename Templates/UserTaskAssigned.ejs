@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <style>
+      .fonts-poppins {
+        font-family: Poppins, sans-serif;
+      }
+      .grid {
+        display: grid;
+      }
+      .grid-row-2 {
+        grid-row: 2;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .h-full {
+        height: 100%;
+      }
+      .theme-color {
+        background-color: #6568b0;
+      }
+      .text-theme-color {
+        color: #6568b0;
+      }
+      .bg-gray-100 {
+        background-color: lightgray;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .bg-white {
+        background-color: white;
+      }
+      .p-4 {
+        padding: 16px;
+      }
+      .width-50 {
+        width: 50%;
+      }
+      .rounded {
+        border-radius: 4px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-3xl {
+        font-size: 30px;
+        line-height: 36px;
+      }
+      .p-2 {
+        padding: 8px;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .mt-2 {
+        margin-top: 8px;
+      }
+      .text-lg {
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .text-justify {
+        text-align: justify;
+      }
+      .text-sm {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .grid-cols-2 {
+        grid-column: 2;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .item-center {
+        align-items: center;
+      }
+      .mb-4 {
+        margin-bottom: 16px;
+      }
+      .text-white {
+        color: white;
+      }
+      .rounded-md {
+        border-radius: 6px;
+      }
+    </style>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="fonts-poppins" style="background-color: lightgray">
+    <div
+      class="flex"
+      style="
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          padding: 16px;
+          width: 75%;
+          border-radius: 4px;
+        "
+      >
+        <div class="text-center p-4">
+          <span class="text-3xl">Task #<%= taskId %></span>
+        </div>
+        <div>
+          <div class="p-2">
+            A task has been assigned by
+            <span class="font-semibold"><%= createdByName %></span> in the
+            project<span class="font-semibold"> <%= projectName %> </span>
+          </div>
+          <p class="p-2 mt-2 text-lg text-justify">
+            <span class="font-semibold text-theme-color"><%= taskName %></span>
+          </p>
+          <div class="grid">
+            <div class="p-2">
+              <div class="text-sm font-semibold">Description</div>
+              <div class="text-justify"><%= taskDescription %></div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2">
+            <div class="p-2">
+              <div class="text-sm font-semibold">Group</div>
+              <div><%= groupName %></div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center mt-2 mb-4">
+            <a
+              class="p-2 theme-color text-white rounded-md"
+              href="https://pms.gnie.ai:7050/"
+              role="button"
+              >Take Action</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

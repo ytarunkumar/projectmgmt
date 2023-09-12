@@ -1,0 +1,907 @@
+{
+    "createProject": {
+        "tenantId": 123,
+        "name": "name",
+        "description": "description",
+        "projectTypeCode": "projectTypeCode",
+        "locationName": "locationName",
+        "locationCoordinates": "locationCoordinates",
+        "estimatedStartDate": "estimatedStartDate",
+        "estimatedCompletionDate": "estimatedCompletionDate",
+        "actualStartDate": "actualStartDate",
+        "actualCompletionDate": "actualCompletionDate",
+        "projectStatusTypeCode": "projectStatusTypeCode",
+        "token": "token",
+        "tenant": "tenant",
+        "loggedUser": "loggedUser"
+    },
+    "viewProjects": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "tenantType": "tenantType",
+        "loggedUserId": "loggedUserId"
+    },
+    "viewTasks": {
+        "token": "token",
+        "projectId": "projectId",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "role": "role"
+    },
+    "viewTaskDetails": {
+        "token": "token",
+        "projectId": "projectId",
+        "taskId": "taskId",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser"
+    },
+    "deleteTask": {
+        "token": "token",
+        "projectId": "projectId",
+        "taskId": "taskId",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "statusTypeCode": "CLOSED"
+    },
+    "updateTask": {
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "taskId": "taskId",
+        "projectId": "projectId",
+        "tenantId": "tenantId",
+        "taskName": "taskName",
+        "taskDescription": "taskDescription",
+        "estimatedEffort": "estimatedEffort",
+        "estimatedStartDate": "estimatedStartDate",
+        "estimatedCompletionDate": "estimatedCompletionDate",
+        "newProjectId": "newProjectId",
+        "taskStatusTypeCode" : "taskStatusTypeCode"
+    },
+    "getLookup": {
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": 123,
+        "loggedUser": "loggedUser",
+        "loadAll": true
+    },
+    "closeProject": {
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": 123,
+        "projectId": 2,
+        "projectStatusType": "CLOSED",
+        "loggedUser": "loggedUser"
+    },
+    "createTasksByTemplate": {
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "projectId": "projectId",
+        "loggedUserId":"loggedUserId",
+        "groups": []
+    },
+    "createTask": {
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "projectId": "projectId",
+        "taskName": "taskName",
+        "taskDescription": "taskDescription",
+        "taskTypeCode": "taskTypeCode",
+        "assignedBy": "assignedBy",
+        "taskStatusTypeCode": "taskStatusTypeCode",
+        "priorityTypeCode": "priorityTypeCode",
+        "estimatedStartDate": "estimatedStartDate",
+        "estimatedCompletionDate": "estimatedCompletionDate",
+        "estimatedEffort": "estimatedEffort",
+        "actualStartDate": "actualStartDate",
+        "actualCompletionDate": "actualCompletionDate",
+        "actualEffort": "actualEffort",
+        "role": "role",
+        "type":"type"
+    },
+    "mailAssignUserToTask": {
+        "taskId": "taskId",
+        "projectName": "projectName",
+        "assignedByName": "assignedByName",
+        "taskName": "taskName",
+        "taskDescription": "taskDescription",
+        "estimatedStartDate": "estimatedStartDate",
+        "estimatedCompletionDate": "estimatedCompletionDate",
+        "groupName": "groupName",
+        "createdByName": "createdByName"
+    },
+    "updateProject": {
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "projectId": "projectId",
+        "projectName": "projectName",
+        "projectDescription": "projectDescription",
+        "projectTypeCode": "projectTypeCode",
+        "locationName": "locationName",
+        "locationCoordinates": "locationCoordinates",
+        "estimatedStartDate": "estimatedStartDate",
+        "estimatedCompletionDate": "estimatedCompletionDate",
+        "actualStartDate": "actualStartDate",
+        "actualCompletionDate": "actualCompletionDate",
+        "projectStatusTypeCode": "projectStatusTypeCode"
+    },
+    "addMemberToProject": {
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "projectId": "projectId",
+        "taskId": "taskId",
+        "effectiveStartDate": "effectiveStartDate",
+        "roleTypeCode": "roleTypeCode"
+    },
+    "getProjectDetails": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "projectId": "projectId"
+    },
+    "viewActiveTasks": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "projectId": "projectId"
+    },
+    "getAllUsers": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "projectId": "projectId"
+    },
+    "assignUserToTask": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "userId": "userId",
+        "projectId": "projectId",
+        "taskId": "taskId"
+    },
+    "completeTask": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "projectId": "projectId",
+        "taskId": "taskId"
+    },
+    "terminateAllLookUp": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser"
+    },
+    "terminateLookupType": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "lookupType": "lookupType"
+    },
+    "terminateLookupTypeField": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "lookupType": "lookupType",
+        "lookupCode": "lookupCode"
+    },
+    "updateLookup": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "lookupType": "lookupType",
+        "lookupData": {
+            "lookupCode": "lookupCode",
+            "displayValue": "displayValue"
+        }
+    },
+    "addLookupField": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "lookupType": "lookupType",
+        "lookupData": {
+            "lookupCode": "lookupCode",
+            "displayValue": "displayValue"
+        }
+    },
+    "addLookup": {
+        "tenant": "tenant",
+        "loggedUser": "loggedUser",
+        "tenantId": "tenantId",
+        "token": "token",
+        "lookupType": "lookupType",
+        "lookupData": [
+            {
+                "lookupCode": "lookupCode",
+                "displayValue": "displayValue"
+            },
+            {
+                "lookupCode": "lookupCode",
+                "displayValue": "displayValue"
+            }
+        ]
+    },
+    "completeAllTask": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "projectId": "projectId"
+    },
+    "isTaskAssigned": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "token": "token",
+        "loggedUser": "loggedUser",
+        "userId": "userId"
+    },
+    "addTemplate": {
+        "loggedUser": "loggedUser",
+        "projectType": "projectType",
+        "templateName": "templateName",
+        "description": "description",
+        "groups": "groups"
+    },
+    "getTemplate": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant"
+    },
+    "reassignTask": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "assignedTo": "assignedTo",
+        "token": "token",
+        "tenantId": "tenantId",
+        "taskId": "taskId",
+        "projectId": "projectId",
+        "loggedUserId": "loggedUserId"
+    },
+    "getProjectCounts": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": "tenantId",
+        "loggedUserId": "loggedUserId",
+        "role": "role",
+        "projectStatusCodes": []
+    },
+    "getProjectsByStatus": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": "tenantId",
+        "projectStatusCode": "projectStatusCode",
+        "loggedUserId": "loggedUserId",
+        "role": "role"
+    },
+    "getTasksList": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": "tenantId",
+        "loggedUserId": "loggedUserId",
+        "projectId": "projectId",
+        "role": "role"
+    },
+    "getAllTasksOfUser": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": "tenantId",
+        "loggedUserId": "loggedUserId",
+        "userId": "userId",
+        "role": "role"
+    },
+    "sendNotification": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "sendTo": "sendTo",
+        "sendFrom": "sendFrom",
+        "message": "message"
+    },
+    "getNotification": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "userId": "userId"
+    },
+    "getRiskTasks": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "projectId": "projectId",
+        "role": "role"
+    },
+    "getRiskProjects": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "role": "role"
+    },
+    "logWork": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "logDate": "logDate",
+        "taskId": "taskId",
+        "hours": "hours",
+        "comments": "comments"
+    },
+    "viewWorkLogs": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser"
+    },
+    "updateLogWork": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "hours": "hours",
+        "workLogId": "workLogId",
+        "logDate": "logDate",
+        "comments": "comments"
+    },
+    "startTask": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "taskId": "taskId",
+        "statusTypeCode": "IP"
+    },
+    "holdTask": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "taskId": "taskId",
+        "statusTypeCode": "IP"
+    },
+    "automateProject": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "projectId": "projectId",
+        "statusTypeCode": "IP"
+    },
+    "getRiskTasksOfEmp": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "userId": "userId",
+        "loggedUserId": "loggedUserId",
+        "role": "role"
+    },
+    "deleteWorkLog": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "worklogId": "workLogId"
+    },
+    "holdOrResume": {
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": 123,
+        "projectId": 2,
+        "projectStatusType": "CLOSED",
+        "loggedUser": "loggedUser"
+    },
+    "getMainTasks": {
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": 123,
+        "projectId": 2,
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "getSubTasks": {
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": "tenantId",
+        "taskId": "taskId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "createSubTask": {
+        "tenantId": "tenantId",
+        "taskId": "taskId",
+        "subTaskName": "subTaskName",
+        "subTaskDescription": "subTaskDescription",
+        "taskStatusTypeCode": "taskStatusTypeCode",
+        "priorityTypeCode": "priorityTypeCode",
+        "canContinue": "canContinue",
+        "orderOfExecution": "orderOfExecution",
+        "isAutomated": "isAutomated",
+        "estimatedStartDate": "estimatedStartDate",
+        "estimatedCompletionDate": "estimatedCompletionDate",
+        "estimatedEffort": "estimatedEffort",
+        "token": "token",
+        "tenant": "tenant",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "getEmployeeProjectTasks": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": "tenantId",
+        "loggedUserId": "loggedUserId",
+        "userId": "userId",
+        "role": "role",
+        "projectId": "projectId"
+    },
+    "getTodoList": {
+        "userEmail": "prince.john@gnie.ai",
+        "loadAllProjectTasks": false,
+        "loadAllStatuses": false,
+        "statuses": [
+            "InProgress",
+            "Hold",
+            "Open"
+        ],
+        "tenant": "tenant",
+        "tenantId": "tenantId"
+    },
+    "typeDefinition": {
+        "DateRange": [
+            "startDate",
+            "endDate"
+        ],
+        "Boolean": [
+            "value"
+        ],
+        "String": [
+            "value"
+        ],
+        "Number": [
+            "value"
+        ],
+        "null": [
+            null
+        ]
+    },
+    "updateStatus":{
+        "loggedUser":"loggedUser",
+        "tenant":"tenant",
+        "tenantId":"tenantId",
+        "taskId":"taskId",
+        "taskStatus":"taskStatus"
+    },
+    "getTaskWorkLog": {
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": "tenantId",
+        "taskId": "taskId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "removeTeamMembers":{
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": "tenantId",
+        "userId": "userId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "getSubTaskDetails":{
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": "tenantId",
+        "subTaskId": "subTaskId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "getProjectsOfEmployee":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "postponeTask":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "taskId":"taskId",
+        "durationInDays":"durationInDays"
+    },
+    "issueCountByStatus":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":"isAllProjects"
+        
+        
+    },
+    "projectCountByStatus":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "issueCountByAssignee":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":"isAllProjects"
+    },
+    "taskCountByAssignee":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":"isAllProjects"
+    },
+    "taskCountByStatus":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":"isAllProjects",
+        "role":"role"
+    },
+    "taskCountByPriority":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":"isAllProjects",
+        "role":"role"
+    },
+    "issueCountByProject":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "role":"role"
+    },
+    "taskCountByProject":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "role":"role"
+    },
+    "issueCountByPriority":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":"isAllProjects",
+        "role":"role"
+    },
+    "issueCountByAssignedBy":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":"isAllProjects"
+    },
+    "issueCountByCreatedBy":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":"isAllProjects"  
+    },
+    "getIssuesBasedOnSeverity":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":true
+    },
+    "createDashboard":{
+        "tenant":"tenant",
+        "tenantId":"tenantId",
+        "loggedUser":"loggedUser",
+        "loggedUserId":"loggedUserId"
+    },
+    "getTaskProgress":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "isAllProjects":"isAllProjects"  
+    },
+    "getProjectProgress":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId" 
+    },
+    "editDashboard":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "dashboardId":"dashboardId",
+        "cardId":"cardId",
+        "category":"category",
+        "fieldName":"fieldName"
+    },
+    "getDashboard": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "id":"id"
+    },
+    "deleteDashboard":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "dashboardId":"dashboardId"
+    },
+    "getUserDashboard":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "deleteWidget":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "cardId":"cardId",
+        "dashboardId":"dashboardId"
+    },
+    "createWidget":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "dashboardId":"dashboardId",
+        "widgetName":"widgetName",
+        "category":"category",
+        "fieldName":"fieldName",
+        "multiGraphName":"multiGraphName",
+        "isAllProjects":"isAllProjects"
+    },
+    "fetchProjectsForDashboard":
+    {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "role":"role"
+    },
+    "getAllExpType":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "addNewExpType":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "expTypeName":"expTypeName",
+        "expTypeDesc":"expTypeDesc"
+    },
+    "addExpenditure":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "expTypeID":"expTypeID",
+        "projectID":"projectID",
+        "expAmnt":"expAmnt"
+    },
+    "subTaskToMainTask":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "taskId":"taskId"
+    },
+    "fetchTag":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "projectId":"projectId"
+    },
+    "updateTag":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "tag":"tag"
+    },
+    "completedTaskCountForPM":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "completedTaskCountForEmp":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "getMainTaskExpense": {
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": 123,
+        "projectId": 2,
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId"
+    },
+    "getSubTaskExpense":{
+        "tenant": "tenant",
+        "token": "token",
+        "tenantId": 123,
+        "projectId": 2,
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "mainTaskId":101
+    },
+    "editExpenditure":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "expTypeID":"expTypeID",
+        "projectID":"projectID",
+        "taskID":"taskID",
+        "expAmnt":"expAmnt",
+        "description":"description"
+    },
+    "addPayment":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "expID":"expID",
+        "amount":"amount",
+        "pay_rec":"pay_rec",
+        "transaction_date":"transaction_date",
+        "description":"description"
+    },
+    "editPayment":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "amount":"amount",
+        "pay_rec":"pay_rec",
+        "transaction_date":"transaction_date",
+        "description":"description",
+        "payment_ID":"payment_ID"
+    },
+    "addLabourExpense":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "labourExp":"labourExp"
+    },
+    "editLabourExpense":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "worker":"worker",
+        "rate":8.1,
+        "worked_unit":12.5,
+        "log_date":"log_date",
+        "labourExpId":1
+    },
+    "addLExpToMasterTable":{
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "labourExp":"labourExp"
+    },
+    "updateTaskPriority": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "priorityCode": "priority",
+        "token": "token",
+        "tenantId": "tenantId",
+        "taskId": "taskId",
+        "projectId": "projectId",
+        "loggedUserId": "loggedUserId"
+    },
+    "updateTaskStatus": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "statusCode": "statusCode",
+        "token": "token",
+        "tenantId": "tenantId",
+        "taskId": "taskId",
+        "projectId": "projectId",
+        "loggedUserId": "loggedUserId"
+    },
+    "updateTaskDate": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",
+        "estimatedStartDate": "estimatedStartDate",
+        "estimatedCompletionDate":"estimatedCompletionDate",
+        "token": "token",
+        "tenantId": "tenantId",
+        "taskId": "taskId",
+        "projectId": "projectId",
+        "loggedUserId": "loggedUserId"
+    },
+    "updateGroupOrder": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",        
+        "token": "token",
+        "tenantId": "tenantId",
+        "projectId":"projectId",
+        "groupData": "groupData",
+        "loggedUserId": "loggedUserId"
+    },
+    "deleteDependency": {
+        "loggedUser": "loggedUser",
+        "tenant": "tenant",        
+        "token": "token",
+        "tenantId": "tenantId",
+        "action": "action",
+        "taskId":"taskId"
+    },
+    "getProjectDetailsForSummary": {
+        "token": "token",
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "tenantType": "tenantType",
+        "loggedUserId": "loggedUserId",
+        "projectId":"projectId"
+    },
+    "tenantTest": {
+        "tenant": "tenant",
+        "tenantId": "tenantId",
+        "loggedUser": "loggedUser",
+        "loggedUserId": "loggedUserId",
+        "hours":"hours"
+    }
+}

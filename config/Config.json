@@ -1,0 +1,99 @@
+{
+    "app": {
+        "componentName": "PMS",
+        "componentNameHB":"PMSHeartBeat",
+        "tenantId": "GBB"
+    },
+    "logger": {
+        "logLevel": "error",
+        "dirName": "/var/log/pms/projectManagement",
+        "datePattern": "YYYYMMDD",
+        "maxsize": "100m",
+        "maxFiles": "5d",
+        "metrLog": "true"
+    },
+    "dayPriorNotify":2,
+    "maxHoursPerDay":9,
+    "minHoursPerDay":8,
+    "majorIssueDue":1,
+    "otherIssueDue":2,
+    "whatsAppServerUrl":"https://pms.gnie.ai:7052",
+    "whatsAppEndpoints":{
+        "assignTask":"/assignTask",
+        "onboardUser":"/onBoardUser",
+        "notifyUser":"/notifyUser",
+        "sendDocument":"/sendDocument"
+    },
+    "attachmentTypes" :[
+        {
+            "A1001" : "TASK",
+            "A1002" : "SUB_TASK",
+            "A1003" : "WORK_LOG",
+            "A1004" : "LEAVE",
+            "A1005" : "ISSUE",
+            "A1006" : "EXPENSE",
+            "A1007" : "TASK_APPROVAL",
+            "A1008" : "TASK_APPROVAL_REQ"
+        }
+    ],
+    "CronJob":{
+        "populateRecurringTasks":"30 01 * * 0-6",
+        "sendClientReportCronJob":"30 05 * * 0-6",
+        "sendWatcherReportCronJob":"30 05 * * 0-6"
+    },
+    "uploadFile":{
+        "serviceUrl":"https://pms.gnie.ai:7051",
+        "serviceApi":"/uploadAttachments"
+    },
+    "formatContent":"/formatContent",
+    "attachmentPath" : "/var/pms/attachments/",
+    "projectHealth":{
+        "Budget": [{
+            "minvalue":-1,
+            "maxvalue":30,
+            "color":"Green"
+        },
+        {
+            "minvalue":30,
+            "maxvalue":70,
+            "color":"Amber"
+        },
+        {
+            "minvalue":70,
+            "maxvalue":100,
+            "color":"Red"
+        }],
+        "progress": [{
+            "minvalue":-1,
+            "maxvalue":30,
+            "color":"Red"
+        },
+        {
+            "minvalue":30,
+            "maxvalue":70,
+            "color":"Amber"
+        },
+        {
+            "minvalue":70,
+            "maxvalue":100,
+            "color":"Green"
+        }],
+        "projectStatus": [{
+            "minvalue":-1,
+            "maxvalue":30,
+            "color":"Red"
+        },
+        {
+            "minvalue":30,
+            "maxvalue":70,
+            "color":"Amber"
+        },
+        {
+            "minvalue":70,
+            "maxvalue":100,
+            "color":"Green"
+        }]
+    },
+    "clientSummaryPdf":"https://pms.gnie.ai:7054/public/clientDocs/",
+    "defaultMilestone":["Advance","Installment-1","Installment-2","Final Payment"]
+}

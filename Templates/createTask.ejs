@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task</title>
+
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+    <table role="presentation" width="100%" border="100px" cellpadding="0" cellspacing="0" style="background: white;border: #F38F44;">
+
+        <tr>
+
+            <td style="padding: 20px;">
+
+                <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 744px; margin: 0 auto;">
+
+                    <tr style="border:0px">
+
+                        <td style="text-align: left; padding: 10px 0; display: inline-flex;">
+
+                            <img src="cid:attached-image" alt="illustration" width="150" height="150">
+
+                            <div style="padding-top: 55px;padding-left: 20px;"><span style="text-align: center; font-family: Inria Sans, sans-serif; font-size: 24px; font-weight: bold; padding-bottom:30px;">Task ID : <%= taskId %></span></div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td style="text-align: left; font-family: Inria Sans, sans-serif; font-size: 16px; padding-bottom: 20px;">
+
+                            <div>
+
+                                <table style="text-align: left;">
+
+                                    <tr><td>A new task has been created ! </td></tr>
+
+                                    <tr></tr>
+
+                                    <tr><td style="font-size: 12px"><br>Created By</td></tr>
+
+                                    <tr><td style="color:#F38F44;font-size: 15px;font-weight: bold;"><%= createdByName %></td></tr>
+
+                                    <tr><td style="font-size: 12px">Project</td></tr>
+
+                                    <tr><td style="color:#F38F44;font-size: 15px;font-weight: bold;"><%= projectName %></td></tr>
+
+                                    <tr><td style="font-size: 12px">Group</td></tr>
+
+                                    <tr><td style="color:#F38F44;font-size: 15px;font-weight: bold;"><%= groupName %></td></tr>
+
+                                </table>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td style="border: 2px solid #F38F44; border-radius: 20px;">
+
+                            <p style="font-family: Inria Sans, sans-serif; font-size: 18px; font-weight: bolder; color:#F38F44; padding: 0px 20px;"><%= taskName %></p>
+
+                            <p style="font-family: Inria Sans, sans-serif; font-size: 14px; padding: 0px 20px;"><%= taskDescription %></p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td style="text-align: right; padding: 40px 0;">
+
+                            <a href="https://pms.gnie.ai:7050/#/" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="display: inline-block; background-color: #F38F44; color: white; text-decoration: none; font-family: Inria Sans, sans-serif; font-size: 14px; font-weight: bold; padding: 15px 40px; border-radius: 40px;border:none;">Take Action</a>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

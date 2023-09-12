@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        .container {
+
+            text-align: center;
+
+            padding-right: 250px;
+
+        }
+
+        .table {
+
+            padding: 10px;
+
+        }
+
+        table {
+
+            width: 100%;
+
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            border-radius: 20px;
+
+            border:2px solid rgb(243, 143, 68);
+
+            box-shadow: 0px 2px 4px rgb(243, 143, 68, 0.5);
+
+            border-collapse: separate; /* Separate border for the cells */
+
+            border-spacing: 5px; /* Add gap between rows and columns */
+
+        }
+
+        th, td {
+
+            padding: 5px; /* Add padding for spacing */
+
+            border: none; /* Remove default cell borders */
+
+        }
+
+        th:nth-child(1), td:nth-child(1) {
+
+            width: 5%;
+
+        }
+
+        th:nth-child(3), td:nth-child(3) {
+
+            width: 30%;
+
+        }
+
+        td {
+
+            border-radius: 10px;
+
+            font-size: 8px; /* Add border radius for curved corners */
+
+        }
+
+        th{
+
+            border-radius: 5px;
+
+            border-collapse: collapse;
+
+            border:2px solid #F8B17C;
+
+            font-size: 14px;
+
+            color: white;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+            <div class="table">
+
+                <form action="#" method="post">
+
+                    <table class="table" align="center" id="emptbl">
+
+                       {{rows}}
+
+                    </table>
+
+                </form>
+
+            </div>
+
+    </div>
+
+</body>
+
+</html>

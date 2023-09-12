@@ -1,0 +1,32 @@
+{
+    "cardCounts":{
+        "defaultCategory":"projects",
+        "data":[],
+        "dataFields":["cardId","status","count"]
+    },
+    "multiGraphs":{
+        "lineChart":{
+            "defaultCategory":"tasks",
+            "overallProjects":true,
+            "projectIds":[],
+            "fieldName":"status"
+        },
+        "pieChart":{
+            "defaultCategory":"issues",
+            "overallProjects":true,
+            "projectIds":[],
+            "fieldName":"severity"
+        },
+        "barChart":{
+            "defaultCategory":"projects",
+            "overallProjects":true,
+            "projectIds":[],
+            "fieldName":"progress"
+        }
+    },
+    "table":{
+        "defaultCategory":"tasks",
+        "data":{},
+        "dataFields":["cardId","tableData"]
+    }
+}

@@ -23,11 +23,11 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('run') {
             steps {
                 // Replace this with your deployment commands
                 // For example, deploying to a web server or cloud platform
-                sh 'npm deploy'
+                sh 'npm run'
             }
         }
     }

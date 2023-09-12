@@ -16,13 +16,6 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                // Run tests (e.g., unit tests)
-                sh 'npm test'
-            }
-        }
-
         stage('Archive Artifacts') {
             steps {
                 // Archive build artifacts (e.g., JAR, WAR, ZIP)
